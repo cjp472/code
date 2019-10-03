@@ -1,0 +1,14 @@
+2019-09-26 13:48:09
+system:service_incr@~@`@4
+system:service@~@`@findInstitutionalRanking@~@`@{"method":"findInstitutionalRanking","old_id":"findInstitutionalRanking","methodName":"首页-机构排名","id":"findInstitutionalRanking","cls":"indexService","status":"1","u_time":"2019-08-23 11:44:19"}
+system:service@~@`@findIncomeFee@~@`@{"method":"findIncomeFee","old_id":"findIncomeFee","methodName":"首页-查询医院缴费收入","id":"findIncomeFee","cls":"indexService","status":"1","u_time":"2019-08-23 11:44:01"}
+system:service@~@`@findMedicalInstitution@~@`@{"method":"findMedicalInstitution","old_id":"findMedicalInstitution","methodName":"查询所有医疗机构","id":"findMedicalInstitution","cls":"indexService","status":"1","u_time":"2019-08-23 11:44:46"}
+system:service@~@`@findPersonnelOnTheSameDay@~@`@{"method":"findPersonnelOnTheSameDay","old_id":"findPersonnelOnTheSameDay","methodName":"首页-查询指定时间内的挂号人次信息","id":"findPersonnelOnTheSameDay","cls":"indexService","status":"1","u_time":"2019-08-23 11:45:15"}
+system:service@~@`@stockList@~@`@{"method":"list","methodName":"jea-库存管理-列表查询","old_id":"","id":"stockList","cls":"stockService","status":"1","u_time":"2019-09-19 15:58:45"}
+system:service@~@`@findPeakValueOfDiagnosisAndTreatment@~@`@{"method":"findPeakValueOfDiagnosisAndTreatment","old_id":"findPeakValueOfDiagnosisAndTreatment","methodName":"首页-诊疗峰值","id":"findPeakValueOfDiagnosisAndTreatment","cls":"indexService","status":"1","u_time":"2019-08-23 11:45:01"}
+system:service@~@`@shipmentList@~@`@{"method":"list","methodName":"jea-库存管理-出货管理","old_id":"","id":"shipmentList","cls":"shipmentService","status":"1","u_time":"2019-09-19 17:20:20"}
+system:service@~@`@stockSave@~@`@{"method":"save","methodName":"jea-库存管理-新增","old_id":"","id":"stockSave","cls":"stockService","status":"1","u_time":"2019-09-19 19:46:33"}
+system:menu_incr@~@`@44
+system:menu@~@`@00042@~@`@{"address":"0","p_name":"一级菜单","name":"后台管理","pid":"0","id":"00042","type":"1","order":"1","status":"1","u_time":"2019-08-29 17:28:33"}
+system:menu@~@`@00043@~@`@{"address":"0","p_name":"后台管理","name":"后台管理1","pid":"00042","id":"00043","type":"2","order":"1","status":"1","u_time":"2019-08-29 17:28:40"}
+system:menu@~@`@00044@~@`@{"address":"12","p_name":"后台管理1","name":"后台管理123","pid":"00043","id":"00044","type":"3","order":"1","status":"1","u_time":"2019-08-29 17:28:53"}

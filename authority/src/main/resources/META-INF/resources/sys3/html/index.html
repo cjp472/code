@@ -1,0 +1,24 @@
+<div id="app">
+    <input type="text" v-model="text">
+    <input type="text" v-model="text1" v-on:mouseover="add" >
+    <input type="text" v-model="text2.text4.text">
+    <h1>{{text}}</h1>
+    <h1>{{text1}}</h1>
+    <h1>{{text2.text4.text}}</h1>
+    <button v-on:click="changeText">change text</button>
+</div>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            text: 'html/app1.html', text1: 'html/app2.html', text2: {text3: 'dasd', text4: {text: 'dasd'}}
+        },
+        methods: {
+            changeText: function () {
+                this.data.text = 'hello vue world!'
+            }, add: function () {
+                this.data.text1 = '<div style="color: red">订单</div>'
+            }
+        }
+    })
+</script>

@@ -1,0 +1,86 @@
+<div id="table_temp"></div>
+<script>
+    //准备视图对象
+    window.viewObj = {
+        toolbar:`<div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-sm" lay-event="delete">删除</button>
+                    <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+                </div>`
+        ,typeData: [
+            {id: 1, name: 'a'},
+            {id: 2, name: 'b'},
+            {id: 3, name: 'c'},
+            {id: 4, name: 'd'}
+        ] //模拟数据
+        ,data2 : [{
+        title: '早餐'
+        ,id: 1
+        ,children: [{
+            title: '油条'
+            ,id: 5
+        },{
+            title: '包子'
+            ,id: 6
+        },{
+            title: '豆浆'
+            ,id: 7
+        }]
+    },{
+        title: '午餐'
+        ,id: 2
+        ,checked: true
+        ,children: [{
+            title: '藜蒿炒腊肉'
+            ,id: 8
+        },{
+            title: '西湖醋鱼'
+            ,id: 9
+        },{
+            title: '小白菜'
+            ,id: 10
+        },{
+            title: '海带排骨汤'
+            ,id: 11
+        }]
+    },{
+        title: '晚餐'
+        ,id: 3
+        ,children: [{
+            title: '红烧肉'
+            ,id: 12
+            ,fixed: true
+        },{
+            title: '番茄炒蛋'
+            ,id: 13
+        }]
+    },{
+        title: '夜宵'
+        ,id: 4
+        ,children: [{
+            title: '小龙虾'
+            ,id: 14
+            ,checked: true
+        },{
+            title: '香辣蟹'
+            ,id: 15
+            ,disabled: true
+        },{
+            title: '烤鱿鱼'
+            ,id: 16
+        }]
+    }]
+    };
+    var rows = [{field:'id', title:'ID', width:80, sort: true}
+        ,{field:'username', title:'用户名', width:120 ,edit: 'text'}
+        ,{field:'email', title:'邮箱', width:150,lay_text:"A|B", templet: 'checkbox_fun'}
+        ,{field:'sex', title:'性别', width:80, sort: true,lay_text:"是|否",templet: 'checkbox_fun'}
+        ,{field:'city', title:'城市', width:100,edit: 'date'}
+        ,{field:'sign', title:'下拉选', width:200,templet: 'select_fun',data: viewObj.typeData}
+        ,{field:'experience', title:'积分', width:80,event:"tree"}
+        ,{field:'ip', title:'IP', width:120,edit: 'text'}
+        ,{field:'logins', title:'登入次数', width:100, sort: true}
+        ,{field:'joinTime1', title:'加入时间', width:220,format:"yyyy-MM-dd HH:mm:ss",templet:'date_fun'}
+        ]
+    var option = {url: 'html/table/temp.html',cache:true};
+    View.setHTMLWithScript(document.getElementById('table_temp'),View.getHtml(option));
+</script>

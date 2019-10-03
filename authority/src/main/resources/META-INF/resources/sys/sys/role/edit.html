@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+</head>
+<body>
+
+<div class="layui-form" lay-filter="formTest" id="formTest" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">权限名</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">类型</label>
+        <div class="layui-input-inline">
+            <input type="checkbox" lay-verify="required" lay-filter="test_tree" name="type" lay-skin="switch" lay-text="全部|自定义" >
+            <div id="test_tree" class="demo-tree"></div>
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="checkbox" lay-verify="required" lay-filter="status" id="status" name="status" lay-skin="switch" lay-text="有效|无效" checked>
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit" value="确认添加">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit" value="确认编辑">
+    </div>
+    <input type='hidden' name="id" id='id' value =''/>
+</div>
+<script src="../../layuiadmin/js/jquery.min.js"></script>
+<script src="../../layuiadmin/layui/layui.all.js"></script>
+<script src="../../layuiadmin/js/lx.js"></script>
+<script>
+    var role = "";
+    var role_m="";
+    function treeToList(data,func) {
+        var str = "";
+        data.forEach( function(item, index){
+            str+=func(item);
+            if(item.children){
+                str+=treeToList(item.children,func);
+            }
+        });
+        return str;
+    }
+    var id = lx.request("id");
+    layui.config({
+        base: '../../layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'form','tree', 'util'], function(){
+        var $ = layui.$
+                ,form = layui.form
+                ,tree = layui.tree
+                ,layer = layui.layer
+                ,util = layui.util;
+
+        if(id){
+            lx.ajax("sys/obj/role",function (data) {
+                var v = data.entity;
+                v.status = v.status == '1';
+                v.type = v.type == '1'
+                role = v.menus;
+                role_m = v.btns;
+                create_tree(v.checks)
+                if(v.type){
+                    $("#test_tree").hide();
+                }
+                layui.form.val("formTest",v);
+            },{id:id});
+        }else{
+            create_tree();
+        }
+
+        //监听提交
+        form.on('submit(layuiadmin-app-form-submit)', function(data){
+            var field = data.field; //获取提交的字段
+            field.status = field.status == 'on'?'1':'0';
+            field.type = field.type == 'on'?'1':'0';
+            Object.keys(field).forEach(function (key) {
+                if(key.indexOf('layuiTreeCheck')!=-1){
+                    delete field[key];
+                }
+            })
+            if(field.type=='1'){//全部权限
+                field.btns = "#btns#";
+                field.menus = "#menus#";
+                field.checks="";
+            }else{//自定义权限
+                var checkData = tree.getChecked('test_tree');
+                var btns = treeToList(checkData,function (i) {
+                    return i.type == '3'?i.address+",":'';
+                });
+                if(btns.length>0){ btns = btns.substr(0,btns.length -1)}
+                var menus = treeToList(checkData,function (i) {
+                    return i.type != '3'?i.id+",":'';
+                });
+                if(menus.length>0){ menus = menus.substr(0,menus.length -1)}
+                field.checks = treeToList(checkData,function (i) {
+                    return i.id+",";
+                });
+                field.btns = btns;
+                field.menus = menus;
+            }
+
+            if(id){field.old_id = id;}
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            lx.ajax("sys/edit/role",function () {
+                parent.layui.table.reload('table_temp_id'); //重载表格
+                parent.layer.close(index); //再执行关闭
+            },field);
+        });
+        //监听开关
+        form.on('switch(test_tree)', function(data){
+            if(data.elem.checked){
+                $("#test_tree").hide();
+            }else{
+                $("#test_tree").show();
+            }
+        });
+    });
+    function create_tree(checks) {
+        if(!checks){ checks = '';}
+        lx.ajax('sys/list/menu?',function (nodes) {
+            var ls = layui_fun.arrayToTree(nodes.rows,'0',function (item) {
+                item.title = item.name;
+                item.spread = true;
+            });
+            layui.tree.render({
+                elem: '#test_tree'
+                ,data: ls
+                ,showCheckbox: true
+                ,id: 'test_tree'
+            });
+            var ls = [];
+            nodes.rows.forEach( function(item, index){
+                if(checks.indexOf(item.id)!=-1){
+                    ls.push(item.id);
+                }
+            });
+            layui.tree.setChecked('test_tree', ls);
+        });
+    }
+</script>
+</body>
+</html>

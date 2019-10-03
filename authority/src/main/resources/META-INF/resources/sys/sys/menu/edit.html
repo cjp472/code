@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
+</head>
+<body>
+
+<div class="layui-form" lay-filter="formTest" id="formTest" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">菜单名</label>
+        <div class="layui-input-inline">
+            <input type="text" name="name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">类型</label>
+        <div class="layui-input-block">
+            <input type="radio" id="types-1" name="type" value="1" title="目录" checked="">
+            <input type="radio" id="types-2" name="type" value="2" title="菜单" disabled="">
+            <input type="radio" id="types-3" name="type" value="3" title="按钮" disabled="">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">地址</label>
+        <div class="layui-input-inline">
+            <input type="text" name="address" id="address" value="#" disabled=""  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">排序</label>
+        <div class="layui-input-inline">
+            <input type="text" name="order" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">父菜单名</label>
+        <div class="layui-input-inline">
+            <input type="text" name="p_name" disabled value="一级菜单" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="checkbox" lay-verify="required" lay-filter="status" id="status" name="status" lay-skin="switch" lay-text="有效|无效" checked>
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit" value="确认添加">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit" value="确认编辑">
+    </div>
+    <input type='hidden' name="id" id='id' value =''/>
+    <input type='hidden' name="pid" id='pid' value ='0'/>
+</div>
+<script src="../../layuiadmin/js/jquery.min.js"></script>
+<script src="../../layuiadmin/layui/layui.all.js"></script>
+<script src="../../layuiadmin/js/lx.js"></script>
+<script>
+    var id = lx.request("id");
+    layui.config({
+        base: '../../layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'form'], function(){
+        var $ = layui.$
+                ,form = layui.form;
+        //监听提交
+        form.on('submit(layuiadmin-app-form-submit)', function(data){
+            var field = data.field; //获取提交的字段
+            field.status = field.status == 'on'?'1':'0';
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            lx.ajax("sys/edit/menu",function () {
+                parent.layui.table.reload('table_temp_id'); //重载表格
+                parent.layer.close(index); //再执行关闭
+            },field);
+        });
+        form.on('radio(formTest)', function(data){
+            console.log(data);
+        });
+    })
+
+    if(id){
+        lx.ajax("sys/obj/menu",function (data) {
+            var v = data.entity;
+            v.status = v.status=='1'?true:false;
+            layui.form.val("formTest",v);
+            if(v.pid != '0'){
+                $("#address").removeAttr('disabled');
+            }
+            $("#types-1").attr('disabled','');
+            layui.form.render(null, 'formTest');
+        },{id:id});
+    }
+    /*新增子菜单时使用*/
+    $(function () {
+        var pid = lx.request("pid");
+        if (pid){
+            lx.ajax('sys/obj/menu?id='+pid,edit_back_p);
+        }
+    })
+    function edit_back_p(data){
+        var v = data.entity;
+        layui.form.val("formTest",{p_name:v.name,pid:v.id,type:v.type=='2'?'3':'2'});
+        $("#address").removeAttr('disabled');
+        $("#address").val("");
+        if(v.type == "1"){
+            $("#types-2").removeAttr('disabled');
+        }else if(v.type == '2'){
+            $("#types-1").attr('disabled','');
+            $("#types-3").removeAttr('disabled');
+        }
+        layui.form.render(null, 'formTest');
+    }
+
+</script>
+</body>
+</html>

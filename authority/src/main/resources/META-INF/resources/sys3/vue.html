@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<a href="#/" rel="external nofollow" >home</a>
+<a href="#/app1" rel="external nofollow" >book</a>
+<a href="#/app2" rel="external nofollow" >movie</a>
+
+<div id="$content$"></div>
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/Tools.js"></script>-->
+<script src="js/lx.js"></script>
+<script>
+    new Router('$content$',{
+        '/': {url: 'html/index.html',cache:true}
+        ,'/app1':{url:'html/app1.html',cache:false}
+        ,'/user':{url:'html/user.html',cache:true}
+    });
+</script>
+</body>
+</html>

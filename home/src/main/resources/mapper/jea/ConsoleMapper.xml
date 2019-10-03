@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.ConsoleMapper">
+    <select id="head" parameterType="map" resultType="map">
+        select sum(total) sum_total,count(1) sum_count from shipment where DATEDIFF(month, addTime, GETDATE())=0
+        union ALL
+        select sum(total) sum_total,count(1) sum_count from shipment
+    </select>
+    <select id="daily_sales_volume" parameterType="map" resultType="map">
+        select day(addTime) d ,sum(total) sum_total,count(1) sum_count from
+        shipment WHERE 28 > DATEDIFF(dd, addTime, GETDATE())
+        GROUP BY day(addTime)
+    </select>
+</mapper>

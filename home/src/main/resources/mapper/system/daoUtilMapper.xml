@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.daoUtilMapper">
+    <!--自动执行更新或插入操作-->
+    <select id="autoInsertORUpdate" parameterType="map" resultType="var">
+      exec autoInsertORUpdate '${table}','${parm}','${where}'
+    </select>
+    <!--增删改查-->
+    <select id = "selects" parameterType="map" resultType="var">
+        exec selects '${table}','${parm}','${where}','${order}', '${sqlType}'
+    </select>
+</mapper>

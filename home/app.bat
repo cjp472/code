@@ -1,0 +1,1 @@
+java -Dloader.path=./lib -Dspring.config.location=./application.properties -jar home-0.0.1-SNAPSHOT.jar

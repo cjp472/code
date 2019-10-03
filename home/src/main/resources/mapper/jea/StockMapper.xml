@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.StockMapper">
+    <select id="list" parameterType="map" resultType="map">
+        select s.id,s.batch,s.quan,s.addTime,s.status,c.name,c.type
+        from stock s
+        join comm c on s.comm_id = c.id
+        <where>
+            <if test="id != null and id != ''">
+                s.id = #{id}
+            </if>
+            <if test="batch != null and batch != ''">
+                s.batch = #{batch}
+            </if>
+            <if test="status != null and status != ''">
+                s.status = #{status}
+            </if>
+            <if test="name != null and name != ''">
+                c.name = #{name}
+            </if>
+            <if test="type != null and type != ''">
+                c.type = #{type}
+            </if>
+        </where>
+        order by batch
+    </select>
+</mapper>

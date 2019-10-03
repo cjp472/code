@@ -1,0 +1,1 @@
+java -Dloader.path=./lib -jar orderPlatform-0.0.1-SNAPSHOT.jar

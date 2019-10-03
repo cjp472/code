@@ -1,0 +1,15 @@
+<div id="app">
+    <input type="text" v-model="text">
+    <h1>{{text}}</h1>
+    <button v-on:click="changeText">change text</button>
+</div>
+<script>
+
+    var app1 = new Vue({
+        el: '#app',
+        data: {text: 'hello world!app2'}
+        ,methods: {changeText: function () {
+            this.data.text = 'hello vue world!'
+        }}
+    });
+</script>

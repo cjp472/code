@@ -1,0 +1,20 @@
+2019-09-02 14:37:57.468  INFO 18760 --- [main] c.l.o.OrderPlatformApplication           : Starting OrderPlatformApplication v0.0.1-SNAPSHOT on LAPTOP-DA16N050 with PID 18760 (D:\code\orderPlatform\target\orderPlatform-0.0.1-SNAPSHOT.jar started by 游林夕 in D:\code\orderPlatform\target)
+2019-09-02 14:37:57.474  INFO 18760 --- [main] c.l.o.OrderPlatformApplication           : The following profiles are active: other
+2019-09-02 14:37:59.692  INFO 18760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 14:37:59.733  INFO 18760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 14:37:59.734  INFO 18760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-02 14:37:59.932  INFO 18760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 14:37:59.933  INFO 18760 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2385 ms
+2019-09-02 14:38:00.297  INFO 18760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 14:38:00.666  INFO 18760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 14:38:00.670  INFO 18760 --- [main] c.l.o.OrderPlatformApplication           : Started OrderPlatformApplication in 3.915 seconds (JVM running for 4.484)
+2019-09-02 14:38:30.862  INFO 17520 --- [main] c.l.o.OrderPlatformApplication           : Starting OrderPlatformApplication v0.0.1-SNAPSHOT on LAPTOP-DA16N050 with PID 17520 (D:\code\orderPlatform\target\orderPlatform-0.0.1-SNAPSHOT.jar started by 游林夕 in D:\code\orderPlatform\target)
+2019-09-02 14:38:30.866  INFO 17520 --- [main] c.l.o.OrderPlatformApplication           : The following profiles are active: other
+2019-09-02 14:38:32.500  INFO 17520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+2019-09-02 14:38:32.539  INFO 17520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 14:38:32.540  INFO 17520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-02 14:38:32.706  INFO 17520 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 14:38:32.707  INFO 17520 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1769 ms
+2019-09-02 14:38:32.996  INFO 17520 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 14:38:33.358  INFO 17520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+2019-09-02 14:38:33.361  INFO 17520 --- [main] c.l.o.OrderPlatformApplication           : Started OrderPlatformApplication in 3.104 seconds (JVM running for 3.572)

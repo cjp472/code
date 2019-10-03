@@ -1,0 +1,26 @@
+<div id="table_temp"></div>
+<script>
+    //准备视图对象
+    window.viewObj = {
+        toolbar:`<div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-sm" lay-event="delete">删除</button>
+                    <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+                </div>`
+        ,typeData: [
+            {id: 1, name: '分类一1'},
+            {id: 2, name: '分类二'},
+            {id: 3, name: '分类三'},
+            {id: 4, name: '分类四'}
+        ]
+        ,url :'json/demo3.json'
+    };
+    var rows = [{field:'id', title:'ID', width:80, sort: true}
+        ,{field:'username', title:'用户名', width:120 ,edit: 'text'}
+        ,{field:'password', title:'密码', width:120 ,templet: 'password_fun',edit: 'text'}
+        ,{field:'sex', title:'性别', width:80, sort: true,lay_text:"男|女",templet: 'checkbox_fun'}
+        ,{field:'roleName', title:'权限名', width:200,templet: 'select_fun',data: viewObj.typeData}
+        ,{field:'status', title:'状态', width:80, sort: true,lay_text:"有效|无效",templet: 'checkbox_fun'}
+        ,{field:'u_time', title:'更新时间', width:220, sort: true}];
+    var option = {url: 'html/table/temp.html',cache:true};
+    View.setHTMLWithScript(document.getElementById('table_temp'),View.getHtml(option));
+</script>

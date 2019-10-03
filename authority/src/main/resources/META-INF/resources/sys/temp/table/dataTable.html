@@ -1,0 +1,131 @@
+<style>
+    /*设置 layui 表格中单元格内容溢出可见样式*/
+    .table-overlay .layui-table-view,
+    .table-overlay .layui-table-box{overflow: visible;}
+    .table-overlay .layui-table-cell{height: auto; overflow: visible;}
+</style>
+<div class="table-overlay">
+    <table class="layui-hide" id="test" lay-filter="demo"></table>
+</div>
+<script>
+    var temp_fun = {
+        //密码框
+        password_fun:function (d) {
+            return `******`;
+        }
+        //单选
+        ,checkbox_fun:function (d) {
+            return `<input type="checkbox" name="${this.field}" lay-filter="checkbox" lay-skin="switch" lay-text="${this.lay_text}" ${d[this.field] == 1 ? ' checked' : ''}>`;
+        }
+        //日期
+        ,date_fun:function (d) {
+            return ` <input type="text" name="${this.field}" format ="${this.format}"  class="layui-input layui-input-date" value="${layui.util.toDateString(d[this.field],this.format)}" >`
+        }
+        //下拉选
+        ,select_fun:function (d){
+            var options = "";
+            for(var i in this.data){
+                var v = this.data[i];
+                options +=`<option value="${v.id}" ${d.sign == v.id ? ' selected="selected"' : ''} >${v.name}</option>`;
+            }
+            return '<a lay-event="type"></a><select name="sign" lay-filter="select"><option value="">请选择</option>' + options + '</select>';
+        }
+    }
+
+    layui.use('table', function(){
+        var table = layui.table, form = layui.form;
+        //修改数据
+        function tr_update(elem,value){
+            var trElem = elem.parents('tr');
+            var tableData = table.cache['test'];
+            // 更新到表格的缓存数据中，才能在获得选中行等等其他的方法中得到更新之后的值
+            tableData[trElem.data('index')][elem.attr('name')] = value;
+        }
+        var cols =[[
+            {type:'numbers'}
+            ,{type:'checkbox'}
+        ]]
+        for(var i in rows){
+            var v = rows[i];
+            if (v['templet']){
+                v['templet'] = temp_fun[v['templet']];
+            }
+            cols[0].push(v);
+        }
+        cols[0].push({field:'', title:'操作',  templet: function(res){
+            return `  <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>保存</a>
+                      <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>`
+        }});
+
+       table.render({
+            elem: '#test'
+            ,data:viewObj.data
+            ,toolbar: viewObj.toolbar
+            ,height:500
+            ,cols: cols
+            ,done: function (res) {
+                $(".layui-input-date").each(function (i) {
+                    layui.laydate.render({
+                        elem: this, format: $(this).attr('format'), done: function (value, date) {
+                            tr_update($(this.elem),value);
+                        }
+                    });
+                });
+            }
+        });
+        //监听地址选择操作
+        form.on('select(select)', function (data) {
+            tr_update( $(data.elem),data.value);
+        });
+        //监听性别操作
+        form.on('switch(checkbox)', function (data) {
+            tr_update( $(data.elem),data.elem.checked?'1':'0');
+        });
+        //监听单元格编辑
+        table.on('edit(demo)', function(obj){
+        });
+        //头工具栏事件
+        table.on('toolbar(demo)', function(obj){
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch(obj.event){
+                case 'delete':
+                    var data = checkStatus.data;
+                    layer.alert(JSON.stringify(data));
+                    break;
+                case 'add':
+                    table.reload('test', {
+                        url: 'json/add.json'
+                    });
+                    break;
+            };
+        });
+        var option = {url: 'html/table/tree.html',cache:true};
+        //监听工具条 和单元格
+        table.on('tool(demo)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'del'){
+                layer.confirm('确认删除?', function(index){
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if(obj.event === 'edit'){
+                layer.alert('编辑行：<br>'+ JSON.stringify(data))
+            }else if(obj.event === 'tree'){
+                //iframe层-父子操作
+                layer.open({
+                    type: 1,
+                    area: ['700px', '450px'],
+                    fixed: false, //不固定
+                    maxmin: true,
+                    content: View.getHtml(option)
+                    ,btn: ['确认']
+                    ,yes: function(index, layero){}
+                    ,cancel: function(){ }
+                });
+            }
+        });
+    });
+
+
+</script>
+

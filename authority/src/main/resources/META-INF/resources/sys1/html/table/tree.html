@@ -1,0 +1,13 @@
+<div id="test_tree" class="demo-tree"></div>
+<script>
+    layui.use(['tree', 'util'], function(){
+        var tree = layui.tree
+                ,layer = layui.layer
+                ,util = layui.util
+        tree.render({
+            elem: '#test_tree'
+            ,data: viewObj.data2
+            ,showCheckbox: true
+        });
+    });
+</script>

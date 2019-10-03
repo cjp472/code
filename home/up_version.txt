@@ -1,0 +1,16 @@
+2019-09-29 19:56:49
+system:service_incr@~@`@4
+system:service@~@`@copy_shipment@~@`@{"method":"copy_shipment","methodName":"复制一条订单","id":"copy_shipment","cls":"shipmentService","token":"8ca046c7-7c2f-4e9b-84fe-056ec11733d2","status":"1","u_time":"2019-09-29 18:54:32"}
+system:service@~@`@return_goods@~@`@{"method":"return_goods","methodName":"退货","id":"return_goods","cls":"shipmentService","token":"8c39507b-4e9a-4e17-b673-f83d6afdb45e","status":"1","u_time":"2019-09-28 20:27:38"}
+system:service@~@`@stockList@~@`@{"method":"list","methodName":"jea-库存管理-列表查询","old_id":"","id":"stockList","cls":"stockService","status":"1","u_time":"2019-09-19 15:58:45"}
+system:service@~@`@exchange_goods@~@`@{"method":"exchange_goods","methodName":"申请换货","id":"exchange_goods","cls":"shipmentService","token":"8c39507b-4e9a-4e17-b673-f83d6afdb45e","status":"1","u_time":"2019-09-28 20:26:27"}
+system:service@~@`@stockSave@~@`@{"method":"save","methodName":"jea-库存管理-新增","old_id":"","id":"stockSave","cls":"stockService","status":"1","u_time":"2019-09-19 19:46:33"}
+system:service@~@`@deliver_goods@~@`@{"method":"deliver_goods","methodName":"开始发货","id":"deliver_goods","cls":"shipmentService","token":"8c39507b-4e9a-4e17-b673-f83d6afdb45e","status":"1","u_time":"2019-09-28 19:40:50"}
+system:service@~@`@shipmentList@~@`@{"method":"list","methodName":"jea-库存管理-出货管理","old_id":"","id":"shipmentList","cls":"shipmentService","status":"1","u_time":"2019-09-19 17:20:20"}
+system:menu_incr@~@`@51
+system:menu@~@`@00050@~@`@{"address":"/jea/type/list.html","p_name":"库存管理","name":"参数管理","pid":"00046","id":"00050","type":"2","token":"2248bd04-ebd1-44ac-bc4b-478122275d96","order":"4","status":"1","u_time":"2019-09-28 21:52:02"}
+system:menu@~@`@00051@~@`@{"address":"/jea/home/console.html","p_name":"库存管理","name":"主页","pid":"00046","id":"00051","type":"2","token":"2248bd04-ebd1-44ac-bc4b-478122275d96","order":"0","status":"1","u_time":"2019-09-28 21:42:57"}
+system:menu@~@`@00046@~@`@{"address":"#","p_name":"jea","name":"库存管理","pid":"0","id":"00046","type":"1","token":"ec130363-2b2d-4c50-93fd-ca9b96c2356a","order":"0","status":"1","u_time":"2019-09-28 10:29:17"}
+system:menu@~@`@00047@~@`@{"address":"jea/comm/list.html","p_name":"库存管理","name":"商品管理","pid":"00046","id":"00047","type":"2","token":"2248bd04-ebd1-44ac-bc4b-478122275d96","order":"1","status":"1","u_time":"2019-09-28 21:51:38"}
+system:menu@~@`@00048@~@`@{"address":"jea/stock/list.html","p_name":"库存管理","name":"库存管理","pid":"00046","id":"00048","type":"2","token":"2248bd04-ebd1-44ac-bc4b-478122275d96","order":"2","status":"1","u_time":"2019-09-28 21:51:46"}
+system:menu@~@`@00049@~@`@{"address":"jea/shipment/list.html","p_name":"库存管理","name":"出货记录","pid":"00046","id":"00049","type":"2","token":"2248bd04-ebd1-44ac-bc4b-478122275d96","order":"3","status":"1","u_time":"2019-09-28 21:51:53"}

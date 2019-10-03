@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.ShipmentMapper">
+    <update id="copy_shipment" parameterType="map">
+        INSERT INTO [shipment] ([id], [orderNo], [name], [phone], [address], [quan], [addTime], [status], [stock_id], [returnTime], [remark], [remark_sj], [delivery_status], [order_status], [total])
+        select NEWID(), [orderNo], [name], [phone], [address], [quan], [addTime], [status], [stock_id], [returnTime], [remark], [remark_sj], [delivery_status], [order_status], [total] from shipment where id = #{id}
+    </update>
+    <select id="return_goods" parameterType="map" resultType="map">
+        DECLARE @id VARCHAR(50) =#{id} ,@quan int =0, @stock_id VARCHAR(50) ,@s_id varchar(50)
+        SELECT @quan=quan,@stock_id=stock_id,@s_id=stock_id FROM [dbo].[shipment] where id = @id and stock_id is not null and delivery_status = '已发货'
+        if(@quan = 0)
+        begin
+        select '尚未发货,无法退货!' msg
+        end
+        ELSE
+        BEGIN
+            update shipment set delivery_status = '已退货' where id = @id
+            <if test="ech != null and ech == 1">
+                set @s_id = null
+                select @s_id = id from stock where comm_id = (select comm_id from stock where id = @stock_id) and batch = '二次货'
+            </if>
+            if(@s_id is null)
+            BEGIN
+                INSERT INTO [stock] ([id], [batch], [quan], [addTime], [status], [comm_id])
+                select NEWID(),'二次货',@quan,GETDATE(),'1',comm_id from stock where id = @stock_id
+            END
+            ELSE
+            BEGIN
+                UPDATE stock set quan = quan +@quan WHERE id = @s_id
+            END
+        END
+    </select>
+    <select id="exchange_goods" resultType="map" parameterType="map">
+        DECLARE @id VARCHAR(50) =#{id} ,@quan int =0, @stock_id VARCHAR(50) ,@s_id varchar(50)
+        SELECT @quan=quan,@stock_id=stock_id,@s_id=stock_id FROM [dbo].[shipment] where id = @id and stock_id is not null and delivery_status = '已发货'
+        if(@quan = 0)
+        begin
+        select '尚未发货,无法换货!' msg
+        end
+        ELSE
+        BEGIN
+            update shipment set delivery_status = '' where id = @id
+             INSERT INTO [shipment] ([id], [orderNo], [name], [phone], [address], [quan], [addTime], [status], [stock_id], [returnTime], [remark], [remark_sj], [delivery_status], [order_status], [total])
+            select NEWID(), [orderNo], [name], [phone], [address], [quan], [addTime], [status], [stock_id], [returnTime], [remark], [remark_sj], '已退货', [order_status], [total] from shipment where id = @id
+            <if test="ech != null and ech == 1">
+                set @s_id = null
+                select @s_id = id from stock where comm_id = (select comm_id from stock where id = @stock_id) and batch = '二次货'
+            </if>
+            if(@s_id is null)
+            BEGIN
+                INSERT INTO [stock] ([id], [batch], [quan], [addTime], [status], [comm_id])
+                select NEWID(),'二次货',@quan,GETDATE(),'1',comm_id from stock where id = @stock_id
+            END
+            ELSE
+            BEGIN
+                UPDATE stock set quan = quan +@quan WHERE id = @s_id
+            END
+        END
+    </select>
+    <select id="deliver_goods" parameterType="map" resultType="map">
+      DECLARE @id VARCHAR(50) =#{id} ,@quan int =0, @stock_id VARCHAR(50)
+        SELECT @quan=quan,@stock_id=stock_id FROM [dbo].[shipment] where id = @id and stock_id is not null
+        and(delivery_status is null or len(delivery_status)=0)
+        if(@quan = 0)
+        begin
+        select '尚未选择批次,或不是未发货状态,无法发货!' msg
+        end
+        update shipment set delivery_status = '已发货' where id = @id
+        update stock set quan = quan-@quan where id = @stock_id and quan >@quan
+        if(@@rowcount = 0)
+        begin
+        select '库存不足,请更换批次!' msg
+        end
+    </select>
+
+    <select id="list" parameterType="map" resultType="map">
+        select sh.id
+        ,sh.orderNo
+        ,sh.name
+        ,sh.phone
+        ,sh.address
+        ,sh.quan
+        ,sh.total
+        ,sh.addTime
+        ,sh.status
+        ,sh.returnTime
+        ,sh.remark_sj
+        ,sh.delivery_status
+        ,sh.order_status
+        ,c.type
+        ,c.name comm_name
+        from shipment sh
+        left join stock s on s.id = sh.stock_id
+        left join comm c on s.comm_id = c.id
+        <where>
+            <if test="orderNo != null and orderNo != ''">
+                sh.orderNo like '%'+#{orderNo}+'%'
+            </if>
+            <if test="name != null and name != ''">
+                sh.name like '%'+#{name}+'%'
+            </if>
+            <if test="delivery_status != null and delivery_status != ''">
+                sh.delivery_status = #{delivery_status}
+            </if>
+            <if test="s_time != null and s_time != ''">
+                sh.addTime between #{s_time} and #{e_time}
+            </if>
+        </where>
+        order by sh.addTime desc
+    </select>
+</mapper>

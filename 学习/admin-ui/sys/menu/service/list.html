@@ -1,0 +1,163 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="/sys/main/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/sys/js/Tools.js"></script>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/sys/main/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="/sys/main/lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/css/style.css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="/sys/main/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <title>查询所有</title>
+</head>
+<body>
+<div class="page-container" id="list_content">
+    <div class="cl pd-5 bg-1 bk-gray mt-20" style="text-align: center;margin: 0 auto;">
+        <span class="l">
+            <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius btn_del"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+            <a href="javascript:;" onclick="member_add('添加','','510')" class="btn btn-primary radius btn_ins"><i class="Hui-iconfont">&#xe600;</i> 添加</a>
+        </span>
+        <span style="display: inline-block;text-align: center;margin: 0 auto;">
+            <input type="text" onfocus="WdatePicker({ maxDate:'#F{$dp.$D(\'datemax\')||\'%y-%M-%d\'}' })" id="datemin" class="input-text Wdate" style="width:120px;">
+            -
+            <input type="text" onfocus="WdatePicker({ minDate:'#F{$dp.$D(\'datemin\')}',maxDate:'%y-%M-%d' })" id="datemax" class="input-text Wdate" style="width:120px;">
+            <input type="text" class="input-text" style="width:250px" placeholder="输入查询条件" id="" name="">
+            <button type="submit" class="btn btn-success radius" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜索</button>
+        </span>
+            <a id="refresh" class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+    </div>
+
+
+</div>
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/sys/main/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/sys/main/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/sys/main/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="/sys/main/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script src="/sys/js/Tools.js"></script>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/sys/main/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/sys/main/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/sys/main/lib/laypage/1.2/laypage.js"></script>
+<div id = "jss"></div>
+<script type="text/javascript">
+    //刷新当前界面
+    function ref() {
+        location.replace(location.href);
+    }
+    //获取当前菜单id
+    var mid = self.frameElement.getAttribute('data-mid');
+    var btn_role = "";
+    //获取当前菜单按钮权限
+    lx.ajax('sys/btn_role?id='+mid,function (data) {
+        btn_role = data.btn_role;
+    });
+
+
+    var menu = lx.request("menu");
+    var list_content = null;
+    $('#jss').html('<script type="text/javascript" src="/sys/menu/service/temp/'+menu+'.js"/>');
+    if (list_content==null){
+        layer.msg('[/sys/menu/service/temp/'+menu+'.js]不存在!',{icon: 5,time:3000},function () {
+            window.location.href = '/error/404.html';
+        });
+    }
+    $('#list_content').append(list_content);
+    /*用户-添加*/
+    function member_add(title,w,h,pid){
+        if (btn_role.indexOf("a")==-1){
+            layer.msg('您没有新增权限!',{icon: 1,time:1000});
+            return;
+        }
+        layer_show(title,'edit.html?pid='+pid,w,h);
+    }
+    /*用户-编辑*/
+    function member_edit(title,id,w,h){
+        if (btn_role.indexOf("c")==-1){
+            layer.msg('您没有修改权限!',{icon: 1,time:1000});
+            return;
+        }
+        layer_show(title,'edit.html?id='+id,w,h);
+    }
+    /*用户-删除*/
+    function member_del(obj,id){
+        if (btn_role.indexOf("b")==-1){
+            layer.msg('您没有删除权限!',{icon: 1,time:1000});
+            return;
+        }
+        layer.confirm('确认要删除吗？',function(index){
+            lx.sys_service({'method':'del_'+menu,'id':id});
+            layer.msg('已删除!',{icon: 1,time:1000});
+            ref();
+        });
+    }
+    /*批量删除*/
+    function datadel() {
+        if (btn_role.indexOf("b")==-1){
+            layer.msg('您没有删除权限!',{icon: 1,time:1000});
+            return;
+        }
+        layer.confirm('确认要删除吗？',function(index){
+            var strSel="";
+            $("[name='test']:checked").each(function(index, element) {
+                if (strSel.length==0){
+                    strSel += $(this).val();
+                }else{
+                    strSel += ","+$(this).val();
+                }
+            });
+            lx.sys_service({'method':'del_'+menu,'id':strSel});
+            layer.msg('已删除!',{icon: 1,time:1000});
+            ref();
+        });
+    }
+
+    function refresh_f(){
+        if (btn_role.indexOf("d")==-1){
+            layer.msg('您没有查看权限!',{icon: 1,time:1000});
+            return;
+        }
+        lx.sys_service({'method':'findAll_'+menu},function (data) {
+            var tbody = "";
+            for(var i in data){
+                var v = data[i];
+                tbody+=get_tr(v);
+            }
+            $('#tbody').html(tbody);
+        });
+    }
+    refresh_f();//查询数据
+
+    //将按钮权限加上
+    if (btn_role.indexOf("a")==-1){
+        $(".btn_ins").hide();
+    }
+    if (btn_role.indexOf("b")==-1){
+        $(".btn_del").hide();
+    }
+    if (btn_role.indexOf("c")==-1){
+        $(".btn_edit").hide();
+    }
+    $('.table-sort').dataTable({
+        "aaSorting": [[ 1, "asc" ]],//默认第几个排序
+        "bStateSave": true,//状态保存
+        "aoColumnDefs": [
+        ]
+    });
+</script>
+</body>
+</html>

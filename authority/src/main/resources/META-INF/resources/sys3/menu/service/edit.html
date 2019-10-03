@@ -1,0 +1,79 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="stylesheet" type="text/css" href="/sys/css/H-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/css/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/css/ztree/zTreeStyle.css">
+    <title>编辑</title>
+</head>
+<body>
+<article class="page-container">
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/sys/js/jquery.min.js"></script>
+<script src="/sys/js/Tools.js"></script>
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="/sys/js/jquery.validate.js"></script>
+<script type="text/javascript" src="/sys/js/validate-methods.js"></script>
+<script type="text/javascript" src="/sys/js/messages_zh.js"></script>
+<script type="text/javascript" src="/sys/js/jquery.ztree.all-3.5.js"></script>
+<script type="text/javascript" src="temp.js"></script>
+<div id = "jss"></div>
+<!--/请在上方写此页面业务相关的脚本-->
+<script type="text/javascript">
+    var menu = parent.menu;
+
+    $('#jss').html('<script type="text/javascript" src="/sys/menu/system/temp/'+menu+'.js"/>');
+
+    $('article').html(tempc.edit_form);
+
+    $('#form-member-add').prop('action',lx.wwwroot+"sys/ins/"+menu+"?");
+    var id = lx.request("id");
+    if (id){
+        lx.ajax('sys/obj/'+menu+'?id='+id,tempc.edit_back);
+        $('#form-member-add').prop('action',lx.wwwroot+"sys/edit/"+menu+"?");
+    }
+
+    $("#form-member-add").validate({
+        rules:tempc.edit_rules,
+        onkeyup:false,
+        focusCleanup:true,
+        success:"valid",
+        submitHandler:function(form){
+            $(form).ajaxSubmit(function (data) {
+                if (data.success == '0'){
+                    layer.alert(data.msg,{icon:5})
+                }else if (data.success == '9') {
+                    lx.login();
+                } else{
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.ref();
+                    parent.layer.close(index);
+                }
+            });
+
+        }
+    });
+
+    //悬浮密码显示
+    $('#password').hover(function () {
+        $('#password').prop('type','text');
+    },function () {
+        $('#password').prop('type','password');
+    });
+
+
+
+ </script>
+</body>
+</html>

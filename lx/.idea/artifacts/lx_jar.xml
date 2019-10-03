@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lx:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lx_jar</output-path>
+    <root id="archive" name="lx.jar">
+      <element id="module-output" name="lx" />
+    </root>
+  </artifact>
+</component>

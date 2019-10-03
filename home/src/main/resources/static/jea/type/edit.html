@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/sys/layuiadmin/layui/css/layui.css" media="all">
+</head>
+<body>
+
+<div class="layui-form" lay-filter="formTest" id="formTest" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">参数名</label>
+        <div class="layui-input-inline">
+            <input type="text" name="k" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">类型</label>
+        <div class="layui-input-block">
+            <input type="radio" id="types-1" name="type" value="1" title="参数名" disabled checked="">
+            <input type="radio" id="types-2" name="type" value="2" title="值" disabled="">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">参数值</label>
+        <div class="layui-input-inline">
+            <input type="text" name="v" id="v" value=""  lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">父参数名称</label>
+        <div class="layui-input-inline">
+            <input type="text" name="p_name" disabled value="" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">状态</label>
+        <div class="layui-input-inline">
+            <input type="checkbox" lay-verify="required" lay-filter="status" id="status" name="status" lay-skin="switch" lay-text="有效|无效" checked>
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit" value="确认添加">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit" value="确认编辑">
+    </div>
+    <input type='hidden' name="id" id='id' value =''/>
+    <input type='hidden' name="pid" id='pid' value ='0'/>
+    <input type='hidden' name="p_k" id='p_k' value ='0'/>
+</div>
+<script src="/sys/layuiadmin/js/jquery.min.js"></script>
+<script src="/sys/layuiadmin/layui/layui.all.js"></script>
+<script src="/sys/layuiadmin/js/lx.js"></script>
+<script>
+    var id = lx.request("id");
+    layui.config({
+        base: '/sys/layuiadmin/' //静态资源所在路径
+    }).extend({
+        index: 'lib/index' //主入口模块
+    }).use(['index', 'form'], function(){
+        var $ = layui.$
+                ,form = layui.form;
+        //监听提交
+        form.on('submit(layuiadmin-app-form-submit)', function(data){
+            var field = data.field; //获取提交的字段
+            field.status = field.status == 'on'?'1':'0';
+            if(id){
+                field.id = id;
+                field.lx_id = id;
+            }else{
+                field.id = '1';
+                field.addTime= '1';
+            }
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            lx.ajax("app/edit/config",function () {
+                parent.layui.table.reload('table_temp_id'); //重载表格
+                parent.layer.close(index); //再执行关闭
+            },field);
+        });
+    })
+
+    if(id){
+        lx.ajax("app/obj/config",function (data) {
+            var v = data.entity;
+            v.status = v.status=='1'?true:false;
+            layui.form.val("formTest",v);
+            $("#types-1").attr('disabled','');
+            layui.form.render(null, 'formTest');
+        },{lx_id:id});
+    }
+    /*新增子菜单时使用*/
+    $(function () {
+        var pid = lx.request("pid");
+        if (pid){
+            lx.ajax('app/obj/config?lx_id='+pid,edit_back_p);
+        }
+    })
+    function edit_back_p(data){
+        var v = data.entity;
+        layui.form.val("formTest",{p_name:v.v,pid:v.id,type:'2',p_k:v.k});
+        layui.form.render(null, 'formTest');
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+
+
+    <link rel="stylesheet" href="../../css/bootstrap.custom.css">
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/layer.js"></script>
+    <style type="text/css">
+        #temp_html ,.panel-body{
+            min-height: 600px;
+        }
+        #temp_html .form-body-div {
+            min-height: 200px;
+            border: dashed 1px;
+            padding-bottom:30px;
+        }
+        .x-remove{
+            display: none;
+        }
+        #temp_html .x-remove{
+            display: block;
+            position:relative;
+            left: -10px;
+            color: #761c19;
+        }
+        .panel-body .form-group:hover  ,#temp_html .form-group:hover {
+            background-color: #31b0d5;
+        }
+        .panel-body .form-group *{display: none}
+        .panel-body .form-group .label{
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 12px;
+            line-height: 1.5;
+            border-radius: 3px;}
+    </style>
+
+</head>
+<body>
+
+<div>
+    <div class="alert alert-info">拖拽左侧的表单元素到右侧区域，即可生成相应的HTML代码，表单代码，轻松搞定！</div>
+    <div class="row">
+        <div class="col-sm-2 full">
+            <div class="panel panel-default">
+                <div class="panel-heading">元素面板</div>
+                <div class="panel-body">
+                    <span class="form-group col-sm-4" ondragstart="drag(event)">
+                        <a class="label btn btn-sm btn-info addRows" data-class="col-md-12" data-value="1"><i class="fa fa-plus"></i>文本框</a>
+                        <div class="row cl">
+                            <label class="col-sm-4 control-label">文本框：</label>
+                            <div class="col-sm-9">
+                                <input name="" class="form-control" placeholder="请输入文本" type="text">
+                            </div>
+                        </div>
+                    </span>
+                    <span class="form-group col-sm-4" ondragstart="drag(event)">
+                        <i class="label btn btn-sm btn-info">多行文本</i>
+                        <div class="row cl">
+                            <label class="col-sm-3 control-label">多行文本：</label>
+                            <div class="col-sm-9">
+                                <textarea type="text" name="" class="form-control" placeholder="请输入文本"></textarea>
+                            </div>
+                        </div>
+                    </span>
+                    <span class="form-group col-sm-4" ondragstart="drag(event)">
+                        <i class="label btn btn-sm btn-info">下拉框</i>
+                        <div class="row cl">
+                            <label class="col-sm-3 control-label">下拉框：</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" name="">
+                                    <option selected="selected">选项 1</option>
+                                    <option>选项 2</option>
+                                    <option>选项 3</option>
+                                    <option>选项 4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </span>
+
+                    <div class="form-group col-sm-4" ondragstart="drag(event)">
+                        <i class="label btn btn-sm btn-info">下拉框</i>
+                        <div class="row cl">
+                            <div class="col-sm-12 col-sm-offset-3">
+                                <button type="submit" class="btn btn-primary">提交</button>
+                                <button onclick="$.modal.close()" class="btn btn-danger" type="button">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-4" ondragstart="drag(event)">
+                        <i class="label btn btn-sm btn-info">下拉框</i>
+                        <div class="row cl">
+                            <div class="form-body-div col-md-12" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                dd
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8 full">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h5 class="inline">拖拽左侧表单元素到此区域</h5>
+                    <div class="inline">
+                        请点击添加行：
+                        <a class="btn btn-sm btn-info addRows" data-class="col-md-12" data-value="1"><i class="fa fa-plus"></i>一行一列</a>
+                        <a class="btn btn-sm btn-info addRows" data-class="col-md-6" data-value="2"><i class="fa fa-plus"></i>一行二列</a>
+                        <a class="btn btn-sm btn-info addRows" data-class="col-md-4" data-value="3"><i class="fa fa-plus"></i>一行三列</a>
+                    </div>
+
+
+
+                <div id="temp_html">
+                    <div class="row cl form-body-row">
+                        <a class="x-remove">x</a>
+                        <div class="form-body-div col-md-12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    </div>
+                </div>
+                <div class="text-center mt10">
+                    <button type="button" class="btn btn-success" data-clipboard-text="testing" id="get-html">获取HTML</button>
+                    <button type="button" class="btn btn-warning" data-clipboard-text="testing" id="review-html">效果预览</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-sm-2 full">
+            <div class="panel panel-default">
+                <div class="panel-heading">属性</div>
+                <div class="panel-body">
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+    }
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", $(ev.target).prop("outerHTML"));
+    }
+    function drop(ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+        var data = ev.dataTransfer.getData("Text");
+        data = $(data);
+        data.children(".label").remove();
+        data =data.html();
+        if($(ev.target).is(".form-body-div")){
+            $(ev.target).append(data);
+        }else{
+            $(ev.target).parents(".form-body-div").append(data);
+        }
+    }
+
+    $(".panel-body .form-group").prop("draggable", true);
+    $(".x-remove").click(function () {
+        $(this).parent(".form-body-row").remove()
+    })
+    $(".addRows").click(function () {
+        var t = $(this).attr("data-class");
+        var count = $(this).attr("data-value");
+        var html = "";
+        for (var i = 0; i < count; i++) {
+            html +=`<div class="form-body-div ${t}" ondrop="drop(event)" ondragover="allowDrop(event)"></div>`;
+        }
+        $("#temp_html").append(`<div class="row cl form-body-row">
+            <a class="x-remove">x</a>
+            ${html}</div>`);
+        $(".x-remove").click(function () {
+            $(this).parent(".form-body-row").remove()
+        })
+    })
+
+    $("#get-html").click(function(){
+        var index = layer.open({
+            type: 1,
+            area: ['600px', '360px'],
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭
+            content: ""+$("#temp_html").html()
+        });
+        layer.full(index);
+    });
+
+    $("#review-html").click(function(){
+        var index = layer.open({
+            type: 1,
+            maxmin: true,
+            shadeClose: true, //点击遮罩关闭
+            content: $("#temp_html").html()
+        });
+        layer.full(index);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title></title>
+    <link href="js/ylx.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1(1).js"></script>
+    <script src="js/Tools.js"></script>
+    <style>
+        body{background-color: #eee; font-size: 0.7rem;}
+        #content div{height: 5.5rem;line-height: 1.2rem;background-color: #fff;border-radius:0.5rem;margin: 0.5rem;padding: 0.5rem;}
+        #content img{width: 5rem;height: 5rem; float: left;margin-right: 1rem;}
+        #content .btn{color:#fff;background-color:#F37B1D;border-color:#F37B1D;border-radius: 0.3rem; font-size: 0.7rem;padding: 0.1rem;margin-top: 0.3rem;}
+        #content .yhq{color:#dd514c;font-size: 0.8rem;border:1px #dd514c solid;padding-right:0.5rem;}
+        #content .quan{color:#fff;background-color:#dd514c;padding: 1px;margin-right:0.5rem;}
+    </style>
+</head>
+<body>
+    <div id="content">
+
+    </div>
+    <script>
+        var u = navigator.userAgent, app = navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+        if (isIOS&&ua.match(/MicroMessenger/i) == "micromessenger"){//苹果手机用微信打开
+            $("body").html("<img src='image/ios.jpg' width=100%>");
+        } else {
+            document.title="我们不生产优惠券,我们只是搬运工!";
+            $(function () {
+                var id = lx.request("id");
+                lx.ajax("/tgs?id="+id,function (ls) {
+                    for(var i in ls){
+                        var v = ls[i];
+                        $("#content").append(`
+                        <div class="am-cf fzbtn" data-clipboard-text="${v.tkl}" id="${v.tkl}" data-url="${v.url}">
+                        <img src="${v.img}">
+                        ${v.title}<br/>
+                        <span class="yhq"><span class="quan">券</span>${v.yhq}</span>总: ${v.zj} , 券后: ${v.qh}<br/>
+                        <button class="btn">点我复制,去淘宝打开!</button>
+                        </div>
+                        `);
+                    }
+                    $(".fzbtn").click(function () {
+                        window.location.href = "taobao://"+$(this).attr("data-url").replace("https://","");;
+                    });
+                });
+            });
+        }
+
+
+    </script>
+</body>
+</html>

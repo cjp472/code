@@ -1,0 +1,108 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="/sys/main/lib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/sys/js/Tools.js"></script>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="/sys/main/lib/html5shiv.js"></script>
+    <script type="text/javascript" src="/sys/main/lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="/sys/main/static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" href="/sys/main/lib/zTree/v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <!--[if IE 6]>
+    <script type="text/javascript" src="/sys/main/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <title>编辑</title>
+</head>
+<body>
+<article class="page-container">
+</article>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/sys/main/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/sys/main/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/sys/main/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="/sys/main/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script src="/sys/js/Tools.js"></script>
+
+<!--请在下方写此页面业务相关的脚本--> 
+<script type="text/javascript" src="/sys/main/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="/sys/main/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="/sys/main/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="/sys/main/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script type="text/javascript" src="/sys/main/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
+<div id = "jss"></div>
+<!--/请在上方写此页面业务相关的脚本-->
+<script type="text/javascript">
+    var menu = parent.menu;
+    $('#jss').html('<script type="text/javascript" src="/sys/menu/system/temp/'+menu+'.js"/>');
+    $('article').html(edit_form);
+
+    $('#form-member-add').prop('action',lx.wwwroot+"sys/ins/"+menu+"?");
+    var id = lx.request("id");
+    if (id){
+        lx.ajax('sys/obj/'+menu+'?id='+id,edit_back);
+        $('#form-member-add').prop('action',lx.wwwroot+"sys/edit/"+menu+"?");
+    }
+
+    $("#form-member-add").validate({
+        rules:edit_rules,
+        onkeyup:false,
+        focusCleanup:true,
+        success:"valid",
+        submitHandler:function(form){
+            $(form).ajaxSubmit(function (data) {
+                if (data.success == '0'){
+                    alert(data.msg);
+                } else{
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.ref();
+                    parent.layer.close(index);
+                }
+            });
+
+        }
+    });
+
+    //悬浮密码显示
+    $('#password').hover(function () {
+        $('#password').prop('type','text');
+    },function () {
+        $('#password').prop('type','password');
+    });
+
+    //点击全选，子复选框被选中
+    function checkAlls(){
+        var allcheck=document.getElementById("checkAll");
+        var choice=document.getElementsByName("choice");
+        for(var i=0;i<choice.length;i++){
+            choice[i].checked=allcheck.checked;
+        }
+    }
+    //二级菜单全选
+    function setC(pid) {
+        var allcheck=document.getElementById(pid);
+        var choice=document.getElementsByClassName(pid);
+        for(var i=0;i<choice.length;i++){
+            choice[i].checked=allcheck.checked;
+        }
+    }
+    function setP(pid) {
+        document.getElementById(pid).checked=true;
+    }
+
+
+ </script>
+</body>
+</html>

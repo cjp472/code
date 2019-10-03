@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.mapper.QueryMapper">
+    <!--查询商品pid-->
+    <select id="queryPID" parameterType="map" resultType="map">
+        declare @num int , @user_id varchar(500)=#{user_id} ,@item_id VARCHAR(500)=#{item_id}
+        select @num=count(1) from query_record qr where user_id = @user_id and item_id=@item_id
+        if(@num = 0)
+        BEGIN
+        SELECT top 1 pid.pid from pid left join query_record qr  on pid.pid = qr.pid and qr.item_id=@item_id where qr.pid is null and pid.name = #{type} order by pid
+        end
+        else
+        BEGIN
+        SELECT pid from query_record where user_id = @user_id and item_id=@item_id
+        END
+    </select>
+    <!--保存查询信息 并返回用户信息-->
+    <select id="saveQueryInfo" parameterType="map" resultType="map">
+        DECLARE @num int
+        select @num=count(1) from query_record where item_id=#{item_id} and user_id = #{user_id}
+        IF (@num=1)
+        BEGIN
+                UPDATE query_record set add_time = getdate() where item_id=#{item_id} and user_id = #{user_id}
+        END
+        ELSE
+        BEGIN
+        insert into query_record
+        (
+        [user_id], [item_id], [title], [pid], [add_time], [user_name], [p_user_id], [fx]
+        )
+        SELECT #{user_id},#{item_id},#{title},#{pid},GETDATE(),#{user_name},#{p_user_id},#{fx}
+        END
+        select
+        #{user_id} id,#{user_name} name,#{p_user_id} tjid,
+        isnull(sum(case when status = '1' then fx else 0 end),0) wjsje,
+        isnull(sum(case when status = '2' then fx else 0 end),0) wtxje,
+        isnull(sum(case when status = '3' then fx else 0 end),0) ytxje,
+        isnull(sum(case when id like 'M_%' then fx else 0 end),0) tgje
+        from fxmx
+        WHERE user_id = #{user_id}
+    </select>
+    <select id="been_uploaded" parameterType="map" resultType="map">
+        select 1 yes where exists (select 1 from fxmx where datediff(dd,getdate(),add_time)=0 and pid not like '8689009_%')
+    </select>
+    <select id="updateOrderInfo" resultType="map" parameterType="map">
+        DECLARE @item_id VARCHAR(500)=#{商品ID} ,@pid VARCHAR(500)=#{推广位ID} ,@status VARCHAR(500)=case #{订单状态} when '已付款' then 1 when '已结算' then 2 else 0 end,@trade_id varchar(500)=#{淘宝订单编号},@fx money =convert(money,#{付款预估收入}) *0.8
+        IF(@status = 1)
+        BEGIN
+        update query_record set fx = @fx where item_id = @item_id and pid = @pid and fx > @fx
+        insert into fxmx (id,user_id,add_time,fx,status,item_id,pid,title,cr_time)  SELECT @trade_id,user_id,GETDATE(),fx,'1',item_id,pid,title,add_time from query_record where item_id = @item_id and pid = @pid
+        select user_id fromRemarkName,'['+title+']@n付.款.成.功,收!货后可获得:'+convert(varchar ,fx) text from query_record  where item_id = @item_id and pid = @pid and @@ROWCOUNT =1
+        END
+        ELSE IF(@status = 2)
+        BEGIN
+        update top(1) fxmx set status = '2',qr_time = GETDATE() where id = @trade_id and status = '1' and item_id = @item_id
+        select top(1) user_id fromRemarkName,'['+title+']@n结.算.成.功,可提现:'+convert(varchar ,fx) text from fxmx a where id = @trade_id and item_id = @item_id and status = '2' and @@ROWCOUNT >0
+        END
+    </select>
+    <!--查询今天更新过的人-->
+    <select id="findTodayUser" resultType="map">
+        select user_id from fxmx where datediff(dd,add_time,getdate())=0 or datediff(dd,qr_time,getdate())=0 group by user_id
+    </select>
+    <!--查询提现信息-->
+    <select id="findTXInfo" resultType="map" parameterType="map">
+        DECLARE @wtxje money,@user_id varchar(500)=#{user_id}
+        select @wtxje = convert(varchar,round(isnull(sum(fx),0),2)) from fxmx WHERE user_id = @user_id and status = '2'
+        if(@wtxje >0)
+        BEGIN
+            update fxmx set status = '3',tx_time = getdate() where user_id = @user_id and status = '2'
+        END
+        select #{user_id} user_id,#{user_id} id,#{user_name} name,convert(varchar,@wtxje) wtxje
+    </select>
+    <!--查询订单明细-->
+    <select id="findDDMX" parameterType="map" resultType="map">
+      select * from (
+      select top 50 * from (
+        select '0' lb,convert(varchar(20),cr_time,20)cr_time,title,'可提现' status,convert(varchar,round(fx,2))fx from fxmx where user_id = #{user_id} and status = '2'
+        union ALL
+        select '0' lb,convert(varchar(20),getdate(),20) cr_time,'','合计' status,convert(varchar,round(sum(fx),2))fx from fxmx where user_id = #{user_id} and status = '2' having sum(fx)>0
+        union ALL
+        select '1' lb,convert(varchar(20),cr_time,20)cr_time,title,'未结算' status,convert(varchar,round(fx,2))fx from fxmx where user_id = #{user_id} and status = '1'
+        union ALL
+        select '1' lb,convert(varchar(20),getdate(),20) cr_time,'','合计' status,convert(varchar,round(sum(fx),2))fx from fxmx where user_id = #{user_id} and status = '1' having sum(fx)>0
+        union ALL
+        select '2' lb,convert(varchar(20),cr_time,20)cr_time,title,'已提现(提现中)' status,convert(varchar,round(fx,2))fx from fxmx where user_id = #{user_id} and status = '3'
+        union ALL
+        select '2' lb,convert(varchar(20),getdate(),20) cr_time,'','合计' status,convert(varchar,round(sum(fx),2))fx from fxmx where user_id = #{user_id} and status = '3' having sum(fx)>0
+        union ALL
+        select '3' lb,convert(varchar(20),cr_time,20)cr_time,title,'推广' status,convert(varchar,round(fx,2))fx from fxmx where user_id = #{user_id} and id like'M_%'
+        union ALL
+        select '3' lb,convert(varchar(20),getdate(),20) cr_time,'','合计' status,convert(varchar,round(sum(fx),2))fx from fxmx where user_id = #{user_id} and id like'M_%' having sum(fx)>0
+        )a order by cr_time desc
+      )b order by lb,cr_time
+
+    </select>
+</mapper>

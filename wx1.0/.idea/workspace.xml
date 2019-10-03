@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="ea8143ce-3b57-447a-9d9a-00c8d741de5e" name="Default" comment="" />
+    <ignored path="wx1.0.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="wx1.0" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="WxBot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1410">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="128" column="21" selection-start-line="118" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/role/controller/AppController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2550">
+              <caret line="102" column="5" selection-start-line="92" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QRCodeUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QRCodeMax.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2450">
+              <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+              <folding>
+                <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+                <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+                <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+                <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+                <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+                <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+                <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+                <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+                <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+                <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+                <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+                <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+                <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+                <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+                <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+                <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+                <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+                <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="role" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="role" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.CenterPlatformApplication">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CenterPlatformApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.CenterPlatformApplication" />
+      <module name="wx1.0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.CenterPlatformApplication" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\ylx\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\code\wx1.0" />
+          <option name="myCopyRoot" value="D:\code\wx1.0" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\code\wx1.0" />
+          <option name="myCopyRoot" value="D:\code\wx1.0" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea8143ce-3b57-447a-9d9a-00c8d741de5e" name="Default" comment="" />
+      <created>1565865187373</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565865187373</updated>
+      <workItem from="1565865188998" duration="813000" />
+      <workItem from="1566822083064" duration="1058000" />
+      <workItem from="1567244113738" duration="1131000" />
+      <workItem from="1568721942879" duration="62000" />
+      <workItem from="1568965718036" duration="20000" />
+      <workItem from="1568969702714" duration="38000" />
+      <workItem from="1568969748095" duration="80000" />
+      <workItem from="1569199649221" duration="33000" />
+    </task>
+    <task id="LOCAL-00001" summary="&#10;">
+      <created>1567244972761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567244972761</updated>
+    </task>
+    <task id="LOCAL-00002" summary="&#10;">
+      <created>1567245183308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567245183308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3235000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18392071" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/role/controller/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="102" column="5" selection-start-line="92" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3840">
+          <caret line="128" column="21" selection-start-line="118" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/ExcelUtilService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/CenterPlatformApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QueryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+          <folding>
+            <marker date="1567245014538" expanded="true" signature="379:487" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="510:667" ph="SELECT top 1... pid" />
+            <marker date="1567245014538" expanded="true" signature="715:789" ph="SELECT pid f... query_record" />
+            <marker date="1567245014538" expanded="true" signature="944:1052" ph="select @num=... query_record" />
+            <marker date="1567245014538" expanded="true" signature="1083:1177" ph="UPDATE query... " />
+            <marker date="1567245014538" expanded="true" signature="1225:1358" ph="insert into query_record... " />
+            <marker date="1567245014538" expanded="true" signature="1367:1453" ph="SELECT ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="1474:1879" ph="select ##{use... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="1971:2086" ph="select 1 yes... " />
+            <marker date="1567245014538" expanded="true" signature="2448:2616" ph="update query... " />
+            <marker date="1567245014538" expanded="true" signature="2618:2744" ph="SELECT @trad... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2753:2917" ph="select user_... query_record" />
+            <marker date="1567245014538" expanded="true" signature="2981:3097" ph="update top(1... " />
+            <marker date="1567245014538" expanded="true" signature="3106:3287" ph="select top(1... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3392:3509" ph="select user_... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3678:3811" ph="select @wtxj... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="3838:3928" ph="update fxmx " />
+            <marker date="1567245014538" expanded="true" signature="3949:4036" ph="select ##{use... " />
+            <marker date="1567245014538" expanded="true" signature="4139:5779" ph="select * fro... top" />
+            <marker date="1567245014538" expanded="true" signature="4161:5750" ph="select top 5... lb" />
+            <marker date="1567245014538" expanded="true" signature="4192:4348" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4375:4552" ph="select '0' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4579:4735" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4762:4939" ph="select '1' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="4966:5127" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5154:5331" ph="select '2' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5358:5513" ph="select '3' l... fxmx" />
+            <marker date="1567245014538" expanded="true" signature="5540:5717" ph="select '3' l... fxmx" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/WxBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/role/controller/AppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2550">
+          <caret line="102" column="5" selection-start-line="92" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/service/ExcelUtilService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1114">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="128" column="21" selection-start-line="118" selection-start-column="8" selection-end-line="128" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2450">
+          <caret line="136" column="67" selection-start-line="135" selection-start-column="16" selection-end-line="136" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lx/util/QRCodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="78" column="22" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

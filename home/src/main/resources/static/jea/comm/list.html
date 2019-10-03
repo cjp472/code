@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layuiAdmin 内容系统 - 文章列表</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="/sys/layuiadmin/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/sys/layuiadmin/style/admin.css" media="all">
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">商品名</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="lx_name" placeholder="请输入" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">类型</label>
+                    <div class="layui-input-inline">
+                        <select name="lx_type" id="lx_comm_type" lay-search>
+                            <option value="">请选择标签</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <label class="layui-form-label">状态</label>
+                    <div class="layui-input-inline">
+                        <select name="lx_status" lay-search>
+                            <option value="">请选择标签</option>
+                            <option value="1">有效</option>
+                            <option value="0">无效</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-inline">
+                    <button class="layui-btn layuiadmin-btn-list" lay-submit lay-filter="table_temp_id">
+                        <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-card-body">
+            <div style="padding-bottom: 10px;">
+                <button class="layui-btn layuiadmin-btn-list" data-type="batchdel">删除</button>
+                <button class="layui-btn layuiadmin-btn-list" data-type="add">添加</button>
+                <span class="layui-inline ">
+                    <input type="text" placeholder="搜索..." id="table_temp_search_id" autocomplete="off" class="layui-input layui-input-search" onchange="dataObj.search()">
+                </span>
+            </div>
+            <table id="table_temp_id" lay-filter="table_temp_id"></table>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="table-content-list">
+    <a class="layui-btn layui-btn-normal layui-btn-xs" lay-event="edit"><i class="layui-icon layui-icon-edit"></i>编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>
+</script>
+<script src="/sys/layuiadmin/js/jquery.min.js"></script>
+<script src="/sys/layuiadmin/layui/layui.all.js"></script>
+<script src="/sys/layuiadmin/js/lx.js"></script>
+<script src="../jea.js"></script>
+<script>
+    dataObj.table_temp.url = lx.wwwroot+'/app/page/comm?lxOrder=id';
+    dataObj.table_temp.cols=[[
+        {type:"checkbox",fixed:"left"}
+        ,{field:"id",width:200,title:"商品ID",sort:!0}
+        ,{field:"code",width:200,title:"商品编号",sort:!0}
+        ,{field:"name",title:"商品名",width:200}
+        ,{field:"path",title:"图片地址",width:200}
+        ,{field:"type",title:"类型",align:"center",width:150}
+        ,{field:"addTime",title:"上传时间",sort:!0,width:200}
+        ,{field:"status",title:"状态",width:100,align:"center",t1:'有效',t2:'无效',templet:temp_fun.sex_func,sort:!0}
+        ,{title:"操作",minWidth:150,align:"center",fixed:"right",toolbar:"#table-content-list"}
+    ]];
+    dataObj.del=function (data) {
+        lx.ajax("app/del/comm",dataObj.del_success,{lx_id:data.id});
+    };
+    dataObj.edit = function (data) {
+        return 'edit.html?id='+data.id;
+    };
+    dataObj.add_content='edit.html';
+    dataObj.delAll = function (checkData) {
+        var ls = [];
+        for(var i in checkData){
+            var v = checkData[i];
+            ls.push({lx_id:v.id});
+        }
+        layer.confirm('确定删除吗？', function(index) {
+            lx.ajax("app/delAll/comm",function () {
+                layui.table.reload('table_temp_id');
+                layer.msg('已删除');
+            },{ls:JSON.stringify(ls)});
+        });
+    }
+</script>
+</body>
+</html>

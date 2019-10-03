@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>layui</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/sys/layuiadmin/layui/css/layui.css" media="all">
+    <script src="/sys/layuiadmin/js/jquery.min.js"></script>
+    <script src="/sys/layuiadmin/layui/layui.all.js"></script>
+    <script src="/sys/layuiadmin/js/lx.js"></script>
+    <script src="../jea.js"></script>
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+    <style>
+        /*设置 layui 表格中单元格内容溢出可见样式*/
+        .table-overlay .layui-table-view,
+        .table-overlay .layui-table-box{overflow: visible;}
+        .table-overlay .layui-table-cell{height: auto; overflow: visible;}
+    </style>
+</head>
+<body>
+<div class="layui-form" lay-filter="formTest" id="formTest" style="padding: 20px 30px 0 0;">
+    <div class="layui-form-item">
+        <label class="layui-form-label">批次号</label>
+        <div class="layui-input-inline">
+            <input type="text" name="batch" lay-verify="required" placeholder="请输入批次号" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item layui-hide">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-submit" id="layuiadmin-app-form-submit" value="确认添加">
+        <input type="button" lay-submit lay-filter="layuiadmin-app-form-edit" id="layuiadmin-app-form-edit" value="确认编辑">
+    </div>
+</div>
+<div class="table-overlay">
+    <table class="layui-hide" id="test" lay-filter="demo"></table>
+</div>
+<script>
+    //准备视图对象
+    window.viewObj = {
+        toolbar:`<div class="layui-btn-container">
+                    <button class="layui-btn layui-btn-sm" lay-event="add">添加</button>
+                </div>`
+        ,typeData: []
+        ,data :[{}]
+    };
+    lx.ajax("/app/list/comm?lx_status=1&name=1&id=1",function (data) {
+        viewObj.typeData = data.rows;
+    });
+
+    layui.use('table', function(){
+        var table = layui.table, form = layui.form;
+        //修改数据
+        function tr_update(elem,value){
+            var trElem = elem.parents('tr');
+            var tableData = table.cache['test'];
+            // 更新到表格的缓存数据中，才能在获得选中行等等其他的方法中得到更新之后的值
+            tableData[trElem.data('index')][elem.attr('name')] = value;
+        }
+
+        var tables = table.render({
+            elem: '#test'
+            ,data:viewObj.data
+            ,toolbar: viewObj.toolbar
+            ,height:500
+            ,cols: [[
+                {width:220}
+                ,{field:'comm_id', title:'类型', width:220 ,templet: temp_fun.select_fun,data: viewObj.typeData}
+                ,{field:'quan', title:'数量',align:"center", width:220 ,edit: 'text'}
+                ,{field:'', title:'操作',align:"center",  templet: function(res){
+                    return `<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del"><i class="layui-icon layui-icon-delete"></i>删除</a>`
+                }}
+            ]]
+            ,done: function (res) {
+                $(".layui-input-date").each(function (i) {
+                    layui.laydate.render({
+                        elem: this, format: $(this).attr('format'), done: function (value, date) {
+                            tr_update($(this.elem),value);
+                        }
+                    });
+                });
+            }
+        });
+        //监听地址选择操作
+        form.on('select(select)', function (data) {
+            tr_update( $(data.elem),data.value);
+        });
+        //监听性别操作
+        form.on('switch(checkbox)', function (data) {
+            tr_update( $(data.elem),data.elem.checked?'1':'0');
+        });
+        //监听单元格编辑
+        table.on('edit(demo)', function(obj){
+        });
+        //头工具栏事件
+        table.on('toolbar(demo)', function(obj){
+            switch(obj.event){
+                case 'add':
+                    var Data = table.cache["test"];
+                    Data.push({});
+                    tables.reload({
+                        data: Data
+                    });
+                    break;
+            };
+        });
+        //监听提交
+        form.on('submit(layuiadmin-app-form-submit)', function(data) {
+            var field = data.field; //获取提交的字段
+            field.list = JSON.stringify(table.cache["test"]);
+            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+            lx.ajax("app/service?method=stockSave",function () {
+                parent.layui.table.reload('table_temp_id'); //重载表格
+                parent.layer.close(index); //再执行关闭
+            },field);
+        });
+            //监听工具条 和单元格
+        table.on('tool(demo)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'del'){
+                layer.confirm('确认删除?', function(index){
+                    obj.del();
+                    layer.close(index);
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

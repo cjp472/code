@@ -1,0 +1,476 @@
+2019-09-27 08:23:51.151  WARN 19352 --- [redisMessageListenerContainer-74] s.s.d.r.RedisOperationsSessionRepository : Unable to publish SessionDestroyedEvent for session 27185521-23e3-4ad7-96a3-c471e7c1f0ca
+2019-09-27 08:26:36.371  INFO 19084 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 19084 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 08:26:36.376  INFO 19084 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 08:26:37.737  INFO 19084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 08:26:37.747  INFO 19084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 08:26:37.786  INFO 19084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+2019-09-27 08:26:38.960  INFO 19084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 08:26:38.999  INFO 19084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 08:26:38.999  INFO 19084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 08:26:39.202  INFO 19084 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 08:26:39.202  INFO 19084 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2707 ms
+2019-09-27 08:26:39.498  INFO 19084 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 08:26:39.498  INFO 19084 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 08:26:39.855  INFO 19084 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 08:26:40.445  INFO 19084 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 08:26:40.505  INFO 19084 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 08:26:40.509  INFO 19084 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.076 seconds (JVM running for 6.074)
+2019-09-27 08:26:51.224  INFO 19084 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 08:26:51.225  INFO 19084 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 08:26:51.238  INFO 19084 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-27 08:50:28.192  INFO 19588 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 19588 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 08:50:28.198  INFO 19588 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 08:50:29.406  INFO 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 08:50:29.411  INFO 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 08:50:29.458  INFO 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-09-27 08:50:30.863  INFO 19588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 08:50:30.909  INFO 19588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 08:50:30.909  INFO 19588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 08:50:31.134  INFO 19588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 08:50:31.134  INFO 19588 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2843 ms
+2019-09-27 08:50:31.506  INFO 19588 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 08:50:31.507  INFO 19588 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 08:50:32.141  INFO 19588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 08:50:32.855  INFO 19588 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 08:50:32.920  INFO 19588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 08:50:32.925  INFO 19588 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.599 seconds (JVM running for 6.458)
+2019-09-27 10:37:56.933  INFO 19768 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 19768 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 10:37:56.939  INFO 19768 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 10:38:00.045  INFO 19768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 10:38:00.051  INFO 19768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 10:38:00.186  INFO 19768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-09-27 10:38:02.644  INFO 19768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 10:38:02.799  INFO 19768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 10:38:02.799  INFO 19768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 10:38:03.359  INFO 19768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:38:03.360  INFO 19768 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6295 ms
+2019-09-27 10:38:03.841  INFO 19768 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 10:38:03.841  INFO 19768 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 10:38:04.449  INFO 19768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:38:06.242  INFO 19768 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 10:38:06.382  INFO 19768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 10:38:06.386  INFO 19768 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 11.737 seconds (JVM running for 14.714)
+2019-09-27 10:38:07.592  INFO 19768 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 10:38:07.593  INFO 19768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 10:38:07.676  INFO 19768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 82 ms
+2019-09-27 10:38:10.714 ERROR 19768 --- [http-nio-8081-exec-8] c.l.a.controller.WebExceptionResolver    : 请求{}发生异常！
+
+java.lang.NullPointerException: null
+	at com.lx.authority.controller.LoginController.getUsers(LoginController.java:43) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_45]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) [spring-webmvc-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:151) [spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:86) [spring-session-core-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118) [spring-web-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_45]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.22.jar:9.0.22]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_45]
+
+2019-09-27 11:43:54.927  INFO 8000 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 8000 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 11:43:54.932  INFO 8000 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 11:43:56.248  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 11:43:56.253  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 11:43:56.310  INFO 8000 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-09-27 11:43:57.534  INFO 8000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 11:43:57.579  INFO 8000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 11:43:57.580  INFO 8000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 11:43:57.781  INFO 8000 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:43:57.782  INFO 8000 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2748 ms
+2019-09-27 11:43:58.092  INFO 8000 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 11:43:58.092  INFO 8000 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 11:43:58.514  INFO 8000 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:43:59.192  INFO 8000 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 11:43:59.308  INFO 8000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 11:43:59.316  INFO 8000 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.311 seconds (JVM running for 6.247)
+2019-09-27 11:44:02.564  INFO 8000 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:44:02.564  INFO 8000 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:44:02.577  INFO 8000 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-27 13:45:22.740  INFO 9076 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 9076 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 13:45:22.745  INFO 9076 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 13:45:23.996  INFO 9076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 13:45:24.002  INFO 9076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 13:45:24.054  INFO 9076 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 repository interfaces.
+2019-09-27 13:45:25.644  INFO 9076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 13:45:25.696  INFO 9076 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 13:45:25.697  INFO 9076 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 13:45:26.037  INFO 9076 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 13:45:26.038  INFO 9076 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3201 ms
+2019-09-27 13:45:26.457  INFO 9076 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 13:45:26.457  INFO 9076 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 13:45:27.058  INFO 9076 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 13:45:28.073  INFO 9076 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 13:45:28.144  INFO 9076 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 13:45:28.150  INFO 9076 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 6.493 seconds (JVM running for 7.517)
+2019-09-27 13:45:28.281  INFO 9076 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 13:45:28.281  INFO 9076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 13:45:28.297  INFO 9076 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-27 13:46:00.814  INFO 21020 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 21020 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 13:46:00.827  INFO 21020 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 13:46:01.998  INFO 21020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 13:46:02.003  INFO 21020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 13:46:02.069  INFO 21020 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37ms. Found 0 repository interfaces.
+2019-09-27 13:46:03.309  INFO 21020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 13:46:03.345  INFO 21020 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 13:46:03.345  INFO 21020 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 13:46:03.531  INFO 21020 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 13:46:03.531  INFO 21020 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2608 ms
+2019-09-27 13:46:03.834  INFO 21020 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 13:46:03.835  INFO 21020 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 13:46:04.257  INFO 21020 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 13:46:04.899  INFO 21020 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 13:46:04.957  INFO 21020 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 13:46:04.962  INFO 21020 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.02 seconds (JVM running for 6.237)
+2019-09-27 13:46:07.017  INFO 21020 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 13:46:07.017  INFO 21020 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 13:46:07.038  INFO 21020 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2019-09-27 13:47:47.117  INFO 5416 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 5416 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 13:47:47.126  INFO 5416 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 13:47:48.205  INFO 5416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 13:47:48.211  INFO 5416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 13:47:48.284  INFO 5416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 repository interfaces.
+2019-09-27 13:47:49.661  INFO 5416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 13:47:49.718  INFO 5416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 13:47:49.718  INFO 5416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 13:47:49.967  INFO 5416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 13:47:49.968  INFO 5416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2755 ms
+2019-09-27 13:47:50.392  INFO 5416 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 13:47:50.392  INFO 5416 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 13:47:50.844  INFO 5416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 13:47:51.392  INFO 5416 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 13:47:51.508  INFO 5416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 13:47:51.511  INFO 5416 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.355 seconds (JVM running for 7.355)
+2019-09-27 13:48:13.659  INFO 5416 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 13:48:13.659  INFO 5416 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 13:48:13.673  INFO 5416 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-09-27 13:49:20.502  INFO 13584 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 13584 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 13:49:20.507  INFO 13584 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 13:49:21.624  INFO 13584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 13:49:21.637  INFO 13584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 13:49:21.688  INFO 13584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-09-27 13:49:22.983  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 13:49:23.026  INFO 13584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 13:49:23.027  INFO 13584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 13:49:23.277  INFO 13584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 13:49:23.277  INFO 13584 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2677 ms
+2019-09-27 13:49:23.609  INFO 13584 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 13:49:23.610  INFO 13584 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 13:49:24.029  INFO 13584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 13:49:24.725  INFO 13584 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 13:49:24.796  INFO 13584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 13:49:24.800  INFO 13584 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.019 seconds (JVM running for 7.42)
+2019-09-27 13:49:27.209  INFO 13584 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 13:49:27.209  INFO 13584 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 13:49:27.301  INFO 13584 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 92 ms
+2019-09-27 13:55:20.208  INFO 16596 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 16596 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 13:55:20.213  INFO 16596 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 13:55:21.381  INFO 16596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 13:55:21.387  INFO 16596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 13:55:21.461  INFO 16596 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 0 repository interfaces.
+2019-09-27 13:55:22.543  INFO 16596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 13:55:22.583  INFO 16596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 13:55:22.583  INFO 16596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 13:55:22.762  INFO 16596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 13:55:22.763  INFO 16596 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2467 ms
+2019-09-27 13:55:23.078  INFO 16596 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 13:55:23.079  INFO 16596 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 13:55:23.528  INFO 16596 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 13:55:24.190  INFO 16596 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 13:55:24.294  INFO 16596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 13:55:24.299  INFO 16596 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 4.854 seconds (JVM running for 7.182)
+2019-09-27 13:55:29.219  INFO 16596 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 13:55:29.221  INFO 16596 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 13:55:29.234  INFO 16596 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-27 14:00:30.973  INFO 17320 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 17320 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:00:30.978  INFO 17320 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:00:32.077  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:00:32.083  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:00:32.137  INFO 17320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-09-27 14:00:33.348  INFO 17320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:00:33.389  INFO 17320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:00:33.389  INFO 17320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:00:33.603  INFO 17320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:00:33.604  INFO 17320 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2539 ms
+2019-09-27 14:00:33.933  INFO 17320 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:00:33.934  INFO 17320 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:00:34.360  INFO 17320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:00:35.013  INFO 17320 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:00:35.273  INFO 17320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:00:35.282  INFO 17320 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.214 seconds (JVM running for 7.613)
+2019-09-27 14:00:37.267  INFO 17320 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:00:37.268  INFO 17320 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:00:37.293  INFO 17320 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-09-27 14:04:02.782  INFO 17764 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 17764 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:04:02.787  INFO 17764 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:04:04.292  INFO 17764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:04:04.307  INFO 17764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:04:04.387  INFO 17764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 0 repository interfaces.
+2019-09-27 14:04:05.618  INFO 17764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:04:05.661  INFO 17764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:04:05.662  INFO 17764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:04:05.973  INFO 17764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:04:05.973  INFO 17764 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3108 ms
+2019-09-27 14:04:06.464  INFO 17764 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:04:06.465  INFO 17764 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:04:06.960  INFO 17764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:04:07.727  INFO 17764 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:04:07.884  INFO 17764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:04:07.891  INFO 17764 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.827 seconds (JVM running for 8.192)
+2019-09-27 14:04:09.518  INFO 17764 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:04:09.518  INFO 17764 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:04:09.530  INFO 17764 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-27 14:05:17.529  INFO 20632 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 20632 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:05:17.543  INFO 20632 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:05:18.806  INFO 20632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:05:18.816  INFO 20632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:05:18.876  INFO 20632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-09-27 14:05:20.102  INFO 20632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:05:20.145  INFO 20632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:05:20.145  INFO 20632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:05:20.444  INFO 20632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:05:20.445  INFO 20632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2827 ms
+2019-09-27 14:05:20.861  INFO 20632 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:05:20.861  INFO 20632 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:05:21.456  INFO 20632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:05:22.304  INFO 20632 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:05:22.375  INFO 20632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:05:22.379  INFO 20632 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.582 seconds (JVM running for 8.035)
+2019-09-27 14:05:26.425  INFO 20632 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:05:26.426  INFO 20632 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:05:26.438  INFO 20632 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-27 14:07:05.371  INFO 13324 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 13324 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:07:05.380  INFO 13324 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:07:06.696  INFO 13324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:07:06.701  INFO 13324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:07:06.763  INFO 13324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 repository interfaces.
+2019-09-27 14:07:08.116  INFO 13324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:07:08.216  INFO 13324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:07:08.216  INFO 13324 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:07:08.457  INFO 13324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:07:08.457  INFO 13324 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2991 ms
+2019-09-27 14:07:08.924  INFO 13324 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:07:08.925  INFO 13324 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:07:09.374  INFO 13324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:07:10.621  INFO 13324 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:07:10.739  INFO 13324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:07:10.747  INFO 13324 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 6.259 seconds (JVM running for 9.607)
+2019-09-27 14:10:05.834  INFO 13324 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:10:05.842  INFO 13324 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:10:05.879  INFO 13324 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2019-09-27 14:10:31.363  INFO 20768 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 20768 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:10:31.368  INFO 20768 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:10:33.418  INFO 20768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:10:33.427  INFO 20768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:10:33.514  INFO 20768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2019-09-27 14:10:35.250  INFO 20768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:10:35.306  INFO 20768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:10:35.307  INFO 20768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:10:35.590  INFO 20768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:10:35.590  INFO 20768 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4135 ms
+2019-09-27 14:10:36.152  INFO 20768 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:10:36.153  INFO 20768 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:10:36.668  INFO 20768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:10:37.323  INFO 20768 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:10:37.384  INFO 20768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:10:37.388  INFO 20768 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 7.128 seconds (JVM running for 8.16)
+2019-09-27 14:10:40.366  INFO 20768 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:10:40.367  INFO 20768 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:10:40.384  INFO 20768 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-09-27 14:11:23.925  INFO 2416 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 2416 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:11:23.930  INFO 2416 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:11:25.243  INFO 2416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:11:25.254  INFO 2416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:11:25.301  INFO 2416 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 repository interfaces.
+2019-09-27 14:11:26.550  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:11:26.590  INFO 2416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:11:26.590  INFO 2416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:11:26.785  INFO 2416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:11:26.786  INFO 2416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2778 ms
+2019-09-27 14:11:27.146  INFO 2416 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:11:27.147  INFO 2416 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:11:27.554  INFO 2416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:11:28.346  INFO 2416 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:11:28.422  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:11:28.426  INFO 2416 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.211 seconds (JVM running for 7.679)
+2019-09-27 14:11:31.780  INFO 2416 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:11:31.780  INFO 2416 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:11:31.791  INFO 2416 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-27 14:14:20.966  INFO 8776 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 8776 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:14:20.972  INFO 8776 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:14:22.694  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:14:22.706  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:14:22.762  INFO 8776 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 repository interfaces.
+2019-09-27 14:14:24.012  INFO 8776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:14:24.051  INFO 8776 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:14:24.052  INFO 8776 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:14:24.320  INFO 8776 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:14:24.321  INFO 8776 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3269 ms
+2019-09-27 14:14:24.710  INFO 8776 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:14:24.710  INFO 8776 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:14:25.246  INFO 8776 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:14:26.132  INFO 8776 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:14:26.228  INFO 8776 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:14:26.232  INFO 8776 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 6.071 seconds (JVM running for 8.231)
+2019-09-27 14:14:28.851  INFO 8776 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:14:28.851  INFO 8776 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:14:28.867  INFO 8776 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-09-27 14:16:57.153  INFO 17200 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 17200 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:16:57.158  INFO 17200 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:16:58.732  INFO 17200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:16:58.738  INFO 17200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:16:58.806  INFO 17200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+2019-09-27 14:17:00.192  INFO 17200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:17:00.270  INFO 17200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:17:00.271  INFO 17200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:17:00.503  INFO 17200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:17:00.503  INFO 17200 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3256 ms
+2019-09-27 14:17:00.958  INFO 17200 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:17:00.958  INFO 17200 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:17:01.422  INFO 17200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:17:02.052  INFO 17200 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:17:02.115  INFO 17200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:17:02.119  INFO 17200 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.741 seconds (JVM running for 8.541)
+2019-09-27 14:17:09.451  INFO 17200 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:17:09.451  INFO 17200 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:17:09.464  INFO 17200 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-27 14:20:28.741  INFO 15260 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 15260 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:20:28.748  INFO 15260 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:20:30.041  INFO 15260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:20:30.051  INFO 15260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:20:30.097  INFO 15260 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+2019-09-27 14:20:31.829  INFO 15260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:20:31.873  INFO 15260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:20:31.873  INFO 15260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:20:32.095  INFO 15260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:20:32.095  INFO 15260 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3272 ms
+2019-09-27 14:20:32.589  INFO 15260 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:20:32.589  INFO 15260 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:20:33.166  INFO 15260 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:20:33.853  INFO 15260 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:20:33.935  INFO 15260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:20:33.940  INFO 15260 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.934 seconds (JVM running for 9.904)
+2019-09-27 14:20:34.149  INFO 15260 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:20:34.149  INFO 15260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:20:34.163  INFO 15260 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-09-27 14:22:08.657  INFO 2724 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 2724 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:22:08.661  INFO 2724 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:22:10.022  INFO 2724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:22:10.026  INFO 2724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:22:10.084  INFO 2724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+2019-09-27 14:22:11.535  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:22:11.586  INFO 2724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:22:11.586  INFO 2724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:22:11.823  INFO 2724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:22:11.824  INFO 2724 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3084 ms
+2019-09-27 14:22:12.211  INFO 2724 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:22:12.211  INFO 2724 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:22:12.830  INFO 2724 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:22:13.775  INFO 2724 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:22:14.007  INFO 2724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:22:14.012  INFO 2724 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 6.112 seconds (JVM running for 8.361)
+2019-09-27 14:22:15.171  INFO 2724 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:22:15.171  INFO 2724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:22:15.183  INFO 2724 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-09-27 14:28:34.686  INFO 20848 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 20848 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:28:34.692  INFO 20848 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:28:36.312  INFO 20848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:28:36.316  INFO 20848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:28:36.369  INFO 20848 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-09-27 14:28:37.581  INFO 20848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:28:37.629  INFO 20848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:28:37.630  INFO 20848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:28:38.021  INFO 20848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:28:38.024  INFO 20848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3258 ms
+2019-09-27 14:28:38.539  INFO 20848 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:28:38.540  INFO 20848 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:28:38.977  INFO 20848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:28:39.724  INFO 20848 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:28:39.857  INFO 20848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:28:39.861  INFO 20848 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 5.913 seconds (JVM running for 8.016)
+2019-09-27 14:28:44.548  INFO 12756 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 12756 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:28:44.553  INFO 12756 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:28:46.234  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:28:46.239  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:28:46.295  INFO 12756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2019-09-27 14:28:47.859  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:28:47.911  INFO 12756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:28:47.912  INFO 12756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:28:48.142  INFO 12756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:28:48.142  INFO 12756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3495 ms
+2019-09-27 14:28:48.533  INFO 12756 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:28:48.533  INFO 12756 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:28:48.989  INFO 12756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:28:49.705  INFO 12756 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:28:49.773  INFO 12756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:28:49.778  INFO 12756 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 6.083 seconds (JVM running for 7.976)
+2019-09-27 14:28:56.315  INFO 12756 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:28:56.315  INFO 12756 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:28:56.327  INFO 12756 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2019-09-27 14:56:29.068  INFO 11052 --- [main] c.l.authority.AuthorityApplicationTests  : Starting AuthorityApplicationTests on LAPTOP-DA16N050 with PID 11052 (D:\code\authority\target\test-classes started by 游林夕 in D:\code\lx)
+2019-09-27 14:56:29.097  INFO 11052 --- [main] c.l.authority.AuthorityApplicationTests  : No active profile set, falling back to default profiles: default
+2019-09-27 14:56:35.172  INFO 11052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-27 14:56:35.182  INFO 11052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-27 14:56:35.391  INFO 11052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 repository interfaces.
+2019-09-27 14:56:39.638  INFO 11052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-27 14:56:39.948  INFO 11052 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 14:56:39.949  INFO 11052 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-09-27 14:56:40.661  INFO 11052 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-27 14:56:40.662  INFO 11052 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10939 ms
+2019-09-27 14:56:41.623  INFO 11052 --- [main] com.lx.authority.dao.JedisConfig         : JedisPool注入成功！
+2019-09-27 14:56:41.624  INFO 11052 --- [main] com.lx.authority.dao.JedisConfig         : redis地址：localhost:6379
+2019-09-27 14:56:42.830  INFO 11052 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:56:45.445  INFO 11052 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-09-27 14:56:45.620  INFO 11052 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-27 14:56:45.624  INFO 11052 --- [main] c.l.authority.AuthorityApplicationTests  : Started AuthorityApplicationTests in 21.333 seconds (JVM running for 28.426)
+2019-09-27 14:56:56.654  INFO 11052 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 14:56:56.654  INFO 11052 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-27 14:56:56.663  INFO 11052 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
